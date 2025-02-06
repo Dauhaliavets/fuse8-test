@@ -1,0 +1,27 @@
+.mainContent {
+  padding: 128px 30px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.searchBarContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.loader {
+  font-size: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 720px) {
+  .mainContent {
+    padding: 64px 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .mainContent {
+    padding: 48px 20px;
+  }
+}
