@@ -1,50 +1,26 @@
-# React + TypeScript + Vite
+# Fuse8 test task
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Описание задачи:
 
-Currently, two official plugins are available:
+Нужно реализовать поиск по имени персонажа и отобразить найденный результат на странице с помощью приведенного API. При заходе на страницу пользователь изначально видит только поиск, в который может ввести значение.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Дизайн: [Фигма](https://www.figma.com/design/OqXrvb70uW6plWJYGW4cvI/Rick-nad-Morti-test?node-id=101-2&p=f&t=zrmVhbhxKpJKZ5IE-0)
 
-## Expanding the ESLint configuration
+### API: [Документация API](https://rickandmortyapi.com/documentation/#rest)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### Технические требования:
 
-- Configure the top-level `parserOptions` property like this:
+- [x] Адаптивная вёрстка от 320px до 1920px (pixel perfect не требуется)
+- [x] Поддержка браузеров: последняя версия Chrome
+      Использование React
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Требования задачи:
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- [x] Поиск автоматически должен быть в фокусе для удобства
+- [x] При введении более трех символов должен отправляться запрос к API (для простоты, нужно искать только по имени, например Rick)
+- [x] Каждая карточка ведёт на страницу из поля URL элемента
+- [x] Готовый код выложить либо на GitHub+GitHub Pages (ожидаем две ссылки соответственно: на репозиторий и на работающий сайт).
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Ссылка на деплой приложения
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+[https://dauhaliavets-fuse8.netlify.app/](https://dauhaliavets-fuse8.netlify.app/)
