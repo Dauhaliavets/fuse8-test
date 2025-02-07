@@ -23,4 +23,7 @@
 
 ## Ссылка на деплой приложения
 
+[https://dauhaliavets.github.io/fuse8-test/](https://dauhaliavets.github.io/fuse8-test/)
+
+Резервный деплой
 [https://dauhaliavets-fuse8.netlify.app/](https://dauhaliavets-fuse8.netlify.app/)
